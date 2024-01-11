@@ -2,6 +2,7 @@
   "name": "react-aqfa-bar",
   "version": "1.0.0",
   "description": "This library is focusing on the progress bar and other bars .",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,5 +1,5 @@
-function isWs(string){
-    return string==="jjjj"
+function isTest(string){
+    return string==="test"
 }
 
-module.exports = isWs
+module.exports = isTest;
