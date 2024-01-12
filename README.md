@@ -11,9 +11,9 @@ Beta Version
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <!-- <a href="https://github.com/magnusmage/creatachain-explorer">
-    <img src="public/logo.png" alt="Logo" width="90" height="100">
-  </a> -->
+  <a href="https://www.npmjs.com/package/react-aqfa-bar">
+    <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195336117373894676/image.png?ex=65b39e82&is=65a12982&hm=870f645a22d7f3ebc12763d8cac3bae472091ccb66264250ee57ff57ca859a47&" alt="Logo" width="100%" height="auto">
+  </a>
 
   <h3 align="center">React Aqfa Progress Chart Bar</h3>
 
@@ -43,7 +43,11 @@ or
 yarn add react-aqfa-bar
 ```
 
+  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195331811421724753/image.png?ex=65b39a80&is=65a12580&hm=e7db28ede3344eaa6ee727c388dbbdd32233a4edcde17197d36dce984d83af0a&" alt="progress bar with two color" width="100%" height="auto">
+
 Then, import and use it:
+
+### example 1
 
 ```sh
 import { ProgressBar } from "react-aqfa-bar";
@@ -55,29 +59,47 @@ import { ProgressBar } from "react-aqfa-bar";
         />
 ```
 
+### example 2
+
+You can customize it according to your needs.
+
+  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195334012101734470/image.png?ex=65b39c8c&is=65a1278c&hm=f2b34baa6a7f01eb532e6b3d9f16fc6a11b4e909546f89a6a2b1f2bf078b8057&" alt="progress bar with two color" width="100%" height="auto">
+
+```sh
+import { ProgressBar } from "react-aqfa-bar";
+
+<ProgressBar
+        InitilValue={66}
+        TotalValue={100}
+        ContainerStyle={{ width: "500px" }}
+        initalText="Initial"
+        totalText="Total"
+      />
+```
+
 ## Docs
 
 we are working on it.
 
 ## Props
 
-| Props            |                        Description                         | Default |  Type  |
-| :--------------- | :--------------------------------------------------------: | :-----: | :----: |
-| InitilValue      |           Add inital value for the progress bar.           |   10    | number |
-| TotalValue       |           Add final value for the progress bar.            |   100   | number |
-| initalText       |                     lable inital value                     |   --    | string |
-| totalText        |                      lable inal value                      |   --    | string |
-| InitiSymbol      |     Add any symbol after inital value (e.g. rs,$ etc.)     |   --    | string |
-| FinalSymbol      |     Add any symbol after final value (e.g. rs,$ etc.)      |   --    | string |
-| ContainerStyle   |      Apply styling to the container of progress bar.       |   --    | object |
-| BarStyle         |         Apply styling to the Bar of progress bar.          |   --    | object |
-| BarBgStyle       |    Apply styling to the bar background of progress bar.    |   --    | object |
-| initalValueStyle | Apply styling to the inital value element of progress bar. |   --    | object |
-| initalTextStyle  | Apply styling to the inital text element of progress bar.  |   --    | object |
-| totalValueStyle  | Apply styling to the final value element of progress bar.  |   --    | object |
-| totalTextStyle   |  Apply styling to the final text element of progress bar.  |   --    | object |
+| Props             |                         Description                         | Default |  Type  |
+| :---------------- | :---------------------------------------------------------: | :-----: | :----: |
+| InitilValue       |           Add initial value for the progress bar.           |   10    | number |
+| TotalValue        |            Add final value for the progress bar.            |   100   | number |
+| initialText       |                     lable initial value                     |   --    | string |
+| totalText         |                      lable inal value                       |   --    | string |
+| InitiSymbol       |     Add any symbol after initial value (e.g. rs,$ etc.)     |   --    | string |
+| FinalSymbol       |      Add any symbol after final value (e.g. rs,$ etc.)      |   --    | string |
+| ContainerStyle    |       Apply styling to the container of progress bar.       |   --    | object |
+| BarStyle          |          Apply styling to the Bar of progress bar.          |   --    | object |
+| BarBgStyle        |    Apply styling to the bar background of progress bar.     |   --    | object |
+| initialValueStyle | Apply styling to the initial value element of progress bar. |   --    | object |
+| initialTextStyle  | Apply styling to the initial text element of progress bar.  |   --    | object |
+| totalValueStyle   |  Apply styling to the final value element of progress bar.  |   --    | object |
+| totalTextStyle    |  Apply styling to the final text element of progress bar.   |   --    | object |
 
-  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195330501960015892/image.png?ex=65b39947&is=65a12447&hm=bbc271399cab85d3db4bf8da64cb64e552a2566a25d20602f91c64998268ba7d&" alt="progress bar with two color" width="100%" height="auto">
+  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195332383696756797/image.png?ex=65b39b08&is=65a12608&hm=6d4b451a74b9e659e7535683a4b043e02eeaa15cad04d022366287764e9441d6&" alt="progress bar with two color" width="100%" height="auto">
 
 if you want different color of background behind the progress bar then apply the given below prop.
 

@@ -4,16 +4,16 @@ const ProgressBar = ({
   InitilValue,
   TotalValue,
   Cap,
-  initalText,
+  initialText,
   totalText,
   InitiSymbol,
   FinalSymbol,
   ContainerStyle,
   BarStyle,
   BarBgStyle,
-  initalValueStyle,
+  initialValueStyle,
   totalValueStyle,
-  initalTextStyle,
+  initialTextStyle,
   totalTextStyle,
 }) => {
   const [values, setValues] = useState({ Total: 100, Raised: 10 });
@@ -52,16 +52,16 @@ const ProgressBar = ({
               marginBottom: "12px",
             }}
           >
-            {initalText && (
+            {initialText && (
               <div>
-                <p style={{ color: "#1E1E1E", ...initalTextStyle }}>
-                  {initalText}
+                <p style={{ color: "#1E1E1E", ...initialValueStyle }}>
+                  {initialText}
                 </p>
                 <h3
                   style={{
                     fontWeight: "500",
                     color: "#000",
-                    ...initalValueStyle,
+                    ...initialTextStyle,
                   }}
                 >
                   {values?.Raised} {InitiSymbol}
