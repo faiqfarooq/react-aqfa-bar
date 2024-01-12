@@ -16,7 +16,7 @@ const ProgressBar = ({
   initalTextStyle,
   totalTextStyle,
 }) => {
-  const [values, setValues] = useState({});
+  const [values, setValues] = useState({ Total: 100, Raised: 10 });
   const SoftCap = (20 * values?.Total) / 100;
   const hardCap = (80 * values?.Total) / 100;
 
@@ -24,8 +24,8 @@ const ProgressBar = ({
     if (values?.Total >= values?.Raised) {
       setValues({
         ...values,
-        Raised: Number(InitilValue) || 10,
-        Total: Number(TotalValue) || 100,
+        Raised: Number(InitilValue || 10),
+        Total: Number(TotalValue || 100),
       });
     }
   }, [InitilValue, TotalValue]);
@@ -101,7 +101,7 @@ const ProgressBar = ({
             <div
               style={{
                 width: "100%",
-                background: `linear-gradient(to right, #fff 0%, #fff 80%, rgba(69, 76, 84, 0.30) 80%, rgba(69, 76, 84, 0.30) 100%)`,
+                background: "#fff",
                 borderRadius: "32px",
                 zIndex: 100,
                 ...BarBgStyle,

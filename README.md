@@ -57,11 +57,37 @@ import { ProgressBar } from "react-aqfa-bar";
 
 ## Docs
 
-we are working on it
+we are working on it.
 
-| Props       |      Description      | Default |  Type  |
-| :---------- | :-------------------: | :-----: | :----: |
-| InitilValue | its the inital value. |   10    | number |
+## Props
+
+| Props            |                        Description                         | Default |  Type  |
+| :--------------- | :--------------------------------------------------------: | :-----: | :----: |
+| InitilValue      |           Add inital value for the progress bar.           |   10    | number |
+| TotalValue       |           Add final value for the progress bar.            |   100   | number |
+| initalText       |                     lable inital value                     |   --    | string |
+| totalText        |                      lable inal value                      |   --    | string |
+| InitiSymbol      |     Add any symbol after inital value (e.g. rs,$ etc.)     |   --    | string |
+| FinalSymbol      |     Add any symbol after final value (e.g. rs,$ etc.)      |   --    | string |
+| ContainerStyle   |      Apply styling to the container of progress bar.       |   --    | object |
+| BarStyle         |         Apply styling to the Bar of progress bar.          |   --    | object |
+| BarBgStyle       |    Apply styling to the bar background of progress bar.    |   --    | object |
+| initalValueStyle | Apply styling to the inital value element of progress bar. |   --    | object |
+| initalTextStyle  | Apply styling to the inital text element of progress bar.  |   --    | object |
+| totalValueStyle  | Apply styling to the final value element of progress bar.  |   --    | object |
+| totalTextStyle   |  Apply styling to the final text element of progress bar.  |   --    | object |
+
+  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195330501960015892/image.png?ex=65b39947&is=65a12447&hm=bbc271399cab85d3db4bf8da64cb64e552a2566a25d20602f91c64998268ba7d&" alt="progress bar with two color" width="100%" height="auto">
+
+if you want different color of background behind the progress bar then apply the given below prop.
+
+```sh
+
+BarBgStyle = {{
+background:`linear-gradient(to right, #fff 0%, #fff 80%, rgba(69, 76, 84, 0.30) 80%, rgba(69, 76, 84, 0.30) 100%)`
+}}
+
+```
 
 - All done :smile:
 

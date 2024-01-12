@@ -1,6 +1,6 @@
 {
   "name": "react-aqfa-bar",
-  "version": "1.0.26",
+  "version": "1.0.28",
   "description": "This library is focusing on the progress bar and other bars .",
   "type": "commonjs",
   "main": "lib/index.js",
