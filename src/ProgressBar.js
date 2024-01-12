@@ -16,7 +16,7 @@ const ProgressBar = ({
   initalTextStyle,
   totalTextStyle,
 }) => {
-  const [values, setValues] = useState({ Total: 100, Raised: 10 });
+  const [values, setValues] = useState({});
   const SoftCap = (20 * values?.Total) / 100;
   const hardCap = (80 * values?.Total) / 100;
 
@@ -24,8 +24,8 @@ const ProgressBar = ({
     if (values?.Total >= values?.Raised) {
       setValues({
         ...values,
-        Raised: Number(InitilValue),
-        Total: Number(TotalValue),
+        Raised: Number(InitilValue) || 10,
+        Total: Number(TotalValue) || 100,
       });
     }
   }, [InitilValue, TotalValue]);
@@ -179,11 +179,14 @@ const ProgressBar = ({
           style={{
             minWidth: "280px",
             backgroundColor: "#fff",
-            padding: "12px 6px",
+            padding: "12px 12px",
             margin: "6px",
+            borderRadius: "8px",
           }}
         >
-          <p>Total Value should not be greater than inital value.</p>
+          <p style={{ color: "black" }}>
+            Total Value should not be greater than inital value.
+          </p>
         </div>
       )}
     </>

@@ -1,6 +1,7 @@
 ﻿# react-aqfa-bar
 
 Beta Version
+
 <!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -48,7 +49,7 @@ Then, import and use it:
 import { ProgressBar } from "react-aqfa-bar";
 
  <ProgressBar
-          RaisedValue={50}
+          InitilValue={50}
           TotalValue={100}
           ContainerStyle={{ width: "500px" }}
         />
@@ -57,6 +58,10 @@ import { ProgressBar } from "react-aqfa-bar";
 ## Docs
 
 we are working on it
+
+| Props       |      Description      | Default |  Type  |
+| :---------- | :-------------------: | :-----: | :----: |
+| InitilValue | its the inital value. |   10    | number |
 
 - All done :smile:
 
