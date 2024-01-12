@@ -1,23 +1,36 @@
 {
   "name": "react-aqfa-bar",
-  "version": "1.0.0",
+  "version": "1.0.20",
   "description": "This library is focusing on the progress bar and other bars .",
-  "type": "module",
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/faiqfarooq/react-aqfa-bar.git"
   },
   "keywords": [
-    "progress-bar"
+    "progress-bar",
+    "chart bar"
   ],
   "author": "Faiq Faroq",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/faiqfarooq/react-aqfa-bar/issues"
   },
-  "homepage": "https://github.com/faiqfarooq/react-aqfa-bar#readme"
+  "homepage": "https://github.com/faiqfarooq/react-aqfa-bar#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3"
+  }
 }
