@@ -17,7 +17,7 @@
     "chart bar"
   ],
   "author": "Faiq Faroq",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/faiqfarooq/react-aqfa-bar/issues"
   },
