@@ -8,6 +8,8 @@ Beta Version
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url] -->
 
+[![GitHub issues](https://github.com/faiqfarooq/react-aqfa-bar/issues)
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
