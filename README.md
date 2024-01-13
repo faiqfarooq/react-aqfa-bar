@@ -8,7 +8,7 @@ Beta Version
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url] --> 
 
-[![Issues][issues-shield]][https://github.com/faiqfarooq/react-aqfa-bar/issues]
+[![GitHub issues](https://img.shields.io/github/issues/your-username/your-repository.svg)](https://github.com/faiqfarooq/react-aqfa-bar/issues)
 
 <!-- PROJECT LOGO -->
 <br />
