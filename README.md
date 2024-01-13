@@ -8,6 +8,7 @@ Beta Version
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url] --> 
 
+[![GitHub stars](https://img.shields.io/github/stars/faiqfarooq/react-aqfa-bar.svg?style=social&label=Star&maxAge=2592000)](https://github.com/faiqfarooq/react-aqfa-bar/stargazers/)
 [![GitHub issues](https://img.shields.io/github/issues/faiqfarooq/react-aqfa-bar.svg)](https://github.com/faiqfarooq/react-aqfa-bar/issues)
 
 <!-- PROJECT LOGO -->
