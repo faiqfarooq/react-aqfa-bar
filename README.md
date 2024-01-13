@@ -2,14 +2,11 @@
 
 Beta Version
 
-<!-- [![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url] --> 
-
-[![GitHub stars](https://img.shields.io/github/stars/faiqfarooq/react-aqfa-bar.svg?style=social&label=Star&maxAge=2592000)](https://github.com/faiqfarooq/react-aqfa-bar/stargazers/)
-[![GitHub issues](https://img.shields.io/github/issues/faiqfarooq/react-aqfa-bar.svg)](https://github.com/faiqfarooq/react-aqfa-bar/issues)
+[![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -116,17 +113,17 @@ background:`linear-gradient(to right, #fff 0%, #fff 80%, rgba(69, 76, 84, 0.30) 
 
 - All done :smile:
 
-<!-- [contributors-shield]: https://img.shields.io/static/v1?label=CONTRIBUTORS&message=2&color=blue
-[contributors-url]: https://github.com/magnusmage/creatachain-admin/graphs/contributors
+[contributors-shield]: https://img.shields.io/static/v1?label=CONTRIBUTORS&message=2&color=blue
+[contributors-url]: https://github.com/faiqfarooq/react-aqfa-bar/graphs/contributors
 [forks-shield]: https://img.shields.io/static/v1?label=FORKS&message=0&color=blue
-[forks-url]: https://github.com/magnusmage/creatachain-explorer/network/members
+[forks-url]: https://github.com/faiqfarooq/react-aqfa-bar/network/members
 [stars-shield]: https://img.shields.io/static/v1?label=STARS&message=0&color=blue
-[stars-url]: https://github.com/magnusmage/creatachain-admin/stargazers
+[stars-url]: https://github.com/faiqfarooq/react-aqfa-bar/stargazers
 [issues-shield]: https://img.shields.io/static/v1?label=ISSUES&message=0&color=blue
-[issues-url]: https://github.com/magnusmage/creatachain-admin/issues
+[issues-url]: https://github.com/faiqfarooq/react-aqfa-bar/issues
 [license-shield]: https://img.shields.io/static/v1?label=LICENSE&message=MIT&color=blue
-[license-url]: https://github.com/magnusmage/creatachain-admin/blob/master/LICENSE
-[product-screenshot]: https://i.ibb.co/5skxBw2/coverimage.png -->
+[license-url]: https://github.com/faiqfarooq/react-aqfa-bar/blob/master/LICENSE
+[product-screenshot]: https://i.ibb.co/5skxBw2/coverimage.png
 
 ```
 Copyright © 2024 — aqfa.tech
