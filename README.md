@@ -72,7 +72,7 @@ import { ProgressBar } from "react-aqfa-bar";
         InitilValue={66}
         TotalValue={100}
         ContainerStyle={{ width: "500px" }}
-        initalText="Initial"
+        initialText="Initial"
         totalText="Total"
       />
 ```
@@ -98,6 +98,8 @@ we are working on it.
 | initialTextStyle  | Apply styling to the initial text element of progress bar.  |   --    | object |
 | totalValueStyle   |  Apply styling to the final value element of progress bar.  |   --    | object |
 | totalTextStyle    |  Apply styling to the final text element of progress bar.   |   --    | object |
+
+## Progress bar threshold
 
   <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195332383696756797/image.png?ex=65b39b08&is=65a12608&hm=6d4b451a74b9e659e7535683a4b043e02eeaa15cad04d022366287764e9441d6&" alt="progress bar with two color" width="100%" height="auto">
 
