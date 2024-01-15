@@ -29,6 +29,10 @@ Beta Version
   </p>
 </p>
 
+### Demo
+
+<a href="https://codesandbox.io/embed/8zfk8j?view=Editor+%2B+Preview&module=%2Fsrc%2FApp.js">Demo Link</a>
+
 ## Getting Started
 
 Install this library with your favorite package manager:
@@ -72,7 +76,7 @@ import { ProgressBar } from "react-aqfa-bar";
         InitilValue={66}
         TotalValue={100}
         ContainerStyle={{ width: "500px" }}
-        initalText="Initial"
+        initialText="Initial"
         totalText="Total"
       />
 ```
@@ -83,21 +87,23 @@ we are working on it.
 
 ## Props
 
-| Props             |                         Description                         | Default |  Type  |
-| :---------------- | :---------------------------------------------------------: | :-----: | :----: |
-| InitilValue       |           Add initial value for the progress bar.           |   10    | number |
-| TotalValue        |            Add final value for the progress bar.            |   100   | number |
-| initialText       |                     lable initial value                     |   --    | string |
-| totalText         |                      lable inal value                       |   --    | string |
-| InitiSymbol       |     Add any symbol after initial value (e.g. rs,$ etc.)     |   --    | string |
-| FinalSymbol       |      Add any symbol after final value (e.g. rs,$ etc.)      |   --    | string |
-| ContainerStyle    |       Apply styling to the container of progress bar.       |   --    | object |
-| BarStyle          |          Apply styling to the Bar of progress bar.          |   --    | object |
-| BarBgStyle        |    Apply styling to the bar background of progress bar.     |   --    | object |
-| initialValueStyle | Apply styling to the initial value element of progress bar. |   --    | object |
-| initialTextStyle  | Apply styling to the initial text element of progress bar.  |   --    | object |
-| totalValueStyle   |  Apply styling to the final value element of progress bar.  |   --    | object |
-| totalTextStyle    |  Apply styling to the final text element of progress bar.   |   --    | object |
+| Props          |                              Description                              | Default |  Type  |
+| :------------- | :-------------------------------------------------------------------: | :-----: | :----: |
+| InitilValue    |                Add initial value for the progress bar.                |   10    | number |
+| TotalValue     |                 Add final value for the progress bar.                 |   100   | number |
+| initialText    |                       Lable the initial value.                        |   --    | string |
+| hideInitial    |            hide the initial value under the initial text.             |  true   | boolen |
+| hideTotal      |             hide the Final value under the initial text.              |  true   | boolen |
+| totalText      |                        Lable the final value.                         |   --    | string |
+| InitiSymbol    |          Add any symbol after initial value (e.g. rs,$ etc.)          |   --    | string |
+| FinalSymbol    |           Add any symbol after final value (e.g. rs,$ etc.)           |   --    | string |
+| ContainerStyle |            Apply styling to the container of progress bar.            |   --    | object |
+| BarStyle       |               Apply styling to the Bar of progress bar.               |   --    | object |
+| BarBgStyle     |         Apply styling to the bar background of progress bar.          |   --    | object |
+| textStyle      | Apply styling to the initial and final text element of progress bar.  |   --    | object |
+| valueStyle     | Apply styling to the initial and final value element of progress bar. |   --    | object |
+
+## Progress bar threshold
 
   <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195332383696756797/image.png?ex=65b39b08&is=65a12608&hm=6d4b451a74b9e659e7535683a4b043e02eeaa15cad04d022366287764e9441d6&" alt="progress bar with two color" width="100%" height="auto">
 
@@ -110,6 +116,27 @@ background:`linear-gradient(to right, #fff 0%, #fff 80%, rgba(69, 76, 84, 0.30) 
 }}
 
 ```
+
+### example 3
+
+You can customize it according to your needs.
+
+  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1196436283917094942/image.png?ex=65b79f1e&is=65a52a1e&hm=cc711604205e898aaa9838c59326def87489d43bf49bb6e2de5b296f26c028fc&" alt="progress bar with two color" width="100%" height="auto">
+
+```sh
+import { ProgressBar } from "react-aqfa-bar";
+
+           <ProgressBar Cap={true} />
+
+```
+
+## Props
+
+| Props    |                Description                 | Default |  Type   |
+| :------- | :----------------------------------------: | :-----: | :-----: |
+| Cap      | It shows the threshold with two indicator. |  false  | boolean |
+| leftCap  |     leftCap shows the first threshold.     |   20    | number  |
+| rightCap |    rightCap shows the final threshold.     |   80    | number  |
 
 - All done :smile:
 

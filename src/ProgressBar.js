@@ -8,18 +8,20 @@ const ProgressBar = ({
   totalText,
   InitiSymbol,
   FinalSymbol,
+  hideInitial,
+  hideTotal,
   ContainerStyle,
   BarStyle,
   BarBgStyle,
-  initialValueStyle,
-  totalValueStyle,
-  initialTextStyle,
-  totalTextStyle,
+  textStyle,
+  valueStyle,
+  leftCap,
+  rightCap,
 }) => {
   const [values, setValues] = useState({ Total: 100, Raised: 10 });
-  const SoftCap = (20 * values?.Total) / 100;
-  const hardCap = (80 * values?.Total) / 100;
-
+  const SoftCap = ((leftCap ? leftCap : 20) * values?.Total) / 100;
+  const hardCap = ((rightCap ? rightCap : 80) * values?.Total) / 100;
+  console.log("SoftCap", SoftCap, leftCap);
   useEffect(() => {
     if (values?.Total >= values?.Raised) {
       setValues({
@@ -53,18 +55,18 @@ const ProgressBar = ({
           >
             {initialText && (
               <div>
-                <p style={{ color: "#1E1E1E", ...initialValueStyle }}>
-                  {initialText}
-                </p>
-                <h3
-                  style={{
-                    fontWeight: "500",
-                    color: "#000",
-                    ...initialTextStyle,
-                  }}
-                >
-                  {values?.Raised} {InitiSymbol}
-                </h3>
+                <p style={{ color: "#1E1E1E", ...textStyle }}>{initialText}</p>
+                {!hideInitial && (
+                  <h3
+                    style={{
+                      fontWeight: "500",
+                      color: "#000",
+                      ...valueStyle,
+                    }}
+                  >
+                    {values?.Raised} {InitiSymbol && InitiSymbol}
+                  </h3>
+                )}
               </div>
             )}
             {totalText && (
@@ -73,21 +75,23 @@ const ProgressBar = ({
                   style={{
                     color: "#1E1E1E",
                     textAlign: "right",
-                    ...totalTextStyle,
+                    ...textStyle,
                   }}
                 >
                   {totalText}
                 </p>
 
-                <h3
-                  style={{
-                    fontWeight: "500",
-                    color: "#000",
-                    ...totalValueStyle,
-                  }}
-                >
-                  {values?.Total} {FinalSymbol}
-                </h3>
+                {!hideTotal && (
+                  <h3
+                    style={{
+                      fontWeight: "500",
+                      color: "#000",
+                      ...valueStyle,
+                    }}
+                  >
+                    {values?.Total} {FinalSymbol && FinalSymbol}
+                  </h3>
+                )}
               </div>
             )}
           </div>
@@ -100,7 +104,13 @@ const ProgressBar = ({
             <div
               style={{
                 width: "100%",
-                background: "#fff",
+                background: Cap
+                  ? `linear-gradient(to right, #fff 0%, #fff ${
+                      rightCap ? rightCap : 80
+                    }%, rgba(69, 76, 84, 0.30) ${
+                      rightCap ? rightCap : 80
+                    }%, rgba(69, 76, 84, 0.30) 100%)`
+                  : "#fff",
                 borderRadius: "32px",
                 zIndex: 100,
                 ...BarBgStyle,
@@ -126,7 +136,7 @@ const ProgressBar = ({
                 style={{
                   position: "absolute",
                   top: "9.9%",
-                  left: "20%",
+                  left: leftCap ? `${leftCap}%` : "20%",
                   display: "flex",
                   alignItems: "center",
                   flexDirection: "column",
@@ -140,9 +150,17 @@ const ProgressBar = ({
                     marginBottom: "2px",
                   }}
                 ></div>
-                <div style={{ position: "absolute", top: "18px" }}>
-                  <p style={{ color: "#1E1E1E" }}>Soft Cap</p>
-                  <h1>{SoftCap}</h1>
+                <div style={{ position: "absolute", top: "14px" }}>
+                  <p
+                    style={{
+                      color: "#1E1E1E",
+                      fontSize: "16px",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    Soft Cap
+                    <span style={{ display: "block" }}>{SoftCap}</span>
+                  </p>
                 </div>
               </div>
             )}
@@ -151,7 +169,7 @@ const ProgressBar = ({
                 style={{
                   position: "absolute",
                   top: "9.9%",
-                  right: "20%",
+                  left: rightCap ? `${rightCap}%` : "80%",
                   display: "flex",
                   alignItems: "center",
                   flexDirection: "column",
@@ -165,9 +183,17 @@ const ProgressBar = ({
                     marginBottom: "2px",
                   }}
                 ></div>
-                <div style={{ position: "absolute", top: "18px" }}>
-                  <p style={{ color: "#1E1E1E" }}>Hard Cap</p>
-                  <h1>{hardCap}</h1>
+                <div style={{ position: "absolute", top: "14px" }}>
+                  <p
+                    style={{
+                      color: "#1E1E1E",
+                      fontSize: "16px",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    Hard Cap
+                    <span style={{ display: "block" }}>{hardCap}</span>
+                  </p>
                 </div>
               </div>
             )}

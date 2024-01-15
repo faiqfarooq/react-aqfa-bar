@@ -1,0 +1,7 @@
+src/
+*.ts
+*.tsx
+
+.github/
+
+.node_modules/
