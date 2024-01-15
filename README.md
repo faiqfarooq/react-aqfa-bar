@@ -83,21 +83,21 @@ we are working on it.
 
 ## Props
 
-| Props             |                         Description                         | Default |  Type  |
-| :---------------- | :---------------------------------------------------------: | :-----: | :----: |
-| InitilValue       |           Add initial value for the progress bar.           |   10    | number |
-| TotalValue        |            Add final value for the progress bar.            |   100   | number |
-| initialText       |                  Lable the initial value.                   |   --    | string |
-| totalText         |                   Lable the final value.                    |   --    | string |
-| InitiSymbol       |     Add any symbol after initial value (e.g. rs,$ etc.)     |   --    | string |
-| FinalSymbol       |      Add any symbol after final value (e.g. rs,$ etc.)      |   --    | string |
-| ContainerStyle    |       Apply styling to the container of progress bar.       |   --    | object |
-| BarStyle          |          Apply styling to the Bar of progress bar.          |   --    | object |
-| BarBgStyle        |    Apply styling to the bar background of progress bar.     |   --    | object |
-| initialValueStyle | Apply styling to the initial value element of progress bar. |   --    | object |
-| initialTextStyle  | Apply styling to the initial text element of progress bar.  |   --    | object |
-| totalValueStyle   |  Apply styling to the final value element of progress bar.  |   --    | object |
-| totalTextStyle    |  Apply styling to the final text element of progress bar.   |   --    | object |
+| Props          |                              Description                              | Default |  Type  |
+| :------------- | :-------------------------------------------------------------------: | :-----: | :----: |
+| InitilValue    |                Add initial value for the progress bar.                |   10    | number |
+| TotalValue     |                 Add final value for the progress bar.                 |   100   | number |
+| initialText    |                       Lable the initial value.                        |   --    | string |
+| hideInitial    |            hide the initial value under the initial text.             |  true   | boolen |
+| hideTotal      |             hide the Final value under the initial text.              |  true   | boolen |
+| totalText      |                        Lable the final value.                         |   --    | string |
+| InitiSymbol    |          Add any symbol after initial value (e.g. rs,$ etc.)          |   --    | string |
+| FinalSymbol    |           Add any symbol after final value (e.g. rs,$ etc.)           |   --    | string |
+| ContainerStyle |            Apply styling to the container of progress bar.            |   --    | object |
+| BarStyle       |               Apply styling to the Bar of progress bar.               |   --    | object |
+| BarBgStyle     |         Apply styling to the bar background of progress bar.          |   --    | object |
+| textStyle      | Apply styling to the initial and final text element of progress bar.  |   --    | object |
+| valueStyle     | Apply styling to the initial and final value element of progress bar. |   --    | object |
 
 ## Progress bar threshold
 
@@ -112,6 +112,27 @@ background:`linear-gradient(to right, #fff 0%, #fff 80%, rgba(69, 76, 84, 0.30) 
 }}
 
 ```
+
+### example 3
+
+You can customize it according to your needs.
+
+  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1196434117974310972/image.png?ex=65b79d1a&is=65a5281a&hm=1449c3a6871572e2f82b08de321a53255a8409a16a40b47e1c83f992a9a7b3a9&" alt="progress bar with two color" width="100%" height="auto">
+
+```sh
+import { ProgressBar } from "react-aqfa-bar";
+
+           <ProgressBar Cap={true} />
+
+```
+
+## Props
+
+| Props    |                Description                 | Default |  Type   |
+| :------- | :----------------------------------------: | :-----: | :-----: |
+| Cap      | It shows the threshold with two indicator. |  false  | boolean |
+| leftCap  |     leftCap shows the first threshold.     |   20    | number  |
+| rightCap |    rightCap shows the final threshold.     |   80    | number  |
 
 - All done :smile:
 
