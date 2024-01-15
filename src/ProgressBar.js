@@ -105,7 +105,11 @@ const ProgressBar = ({
               style={{
                 width: "100%",
                 background: Cap
-                  ? `linear-gradient(to right, #fff 0%, #fff ${rightCap}%, rgba(69, 76, 84, 0.30) ${rightCap}%, rgba(69, 76, 84, 0.30) 100%)`
+                  ? `linear-gradient(to right, #fff 0%, #fff ${
+                      rightCap ? rightCap : 80
+                    }%, rgba(69, 76, 84, 0.30) ${
+                      rightCap ? rightCap : 80
+                    }%, rgba(69, 76, 84, 0.30) 100%)`
                   : "#fff",
                 borderRadius: "32px",
                 zIndex: 100,
