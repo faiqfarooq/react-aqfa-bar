@@ -117,7 +117,7 @@ background:`linear-gradient(to right, #fff 0%, #fff 80%, rgba(69, 76, 84, 0.30) 
 
 You can customize it according to your needs.
 
-  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1196434117974310972/image.png?ex=65b79d1a&is=65a5281a&hm=1449c3a6871572e2f82b08de321a53255a8409a16a40b47e1c83f992a9a7b3a9&" alt="progress bar with two color" width="100%" height="auto">
+  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1196436283917094942/image.png?ex=65b79f1e&is=65a52a1e&hm=cc711604205e898aaa9838c59326def87489d43bf49bb6e2de5b296f26c028fc&" alt="progress bar with two color" width="100%" height="auto">
 
 ```sh
 import { ProgressBar } from "react-aqfa-bar";
