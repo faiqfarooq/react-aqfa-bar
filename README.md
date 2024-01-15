@@ -87,8 +87,8 @@ we are working on it.
 | :---------------- | :---------------------------------------------------------: | :-----: | :----: |
 | InitilValue       |           Add initial value for the progress bar.           |   10    | number |
 | TotalValue        |            Add final value for the progress bar.            |   100   | number |
-| initialText       |                     lable initial value                     |   --    | string |
-| totalText         |                      lable inal value                       |   --    | string |
+| initialText       |                  Lable the initial value.                   |   --    | string |
+| totalText         |                   Lable the final value.                    |   --    | string |
 | InitiSymbol       |     Add any symbol after initial value (e.g. rs,$ etc.)     |   --    | string |
 | FinalSymbol       |      Add any symbol after final value (e.g. rs,$ etc.)      |   --    | string |
 | ContainerStyle    |       Apply styling to the container of progress bar.       |   --    | object |
