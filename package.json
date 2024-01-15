@@ -1,12 +1,12 @@
 {
   "name": "react-aqfa-bar",
-  "version": "1.0.30",
-  "description": "This library is focusing on the progress bar and other bars .",
+  "version": "1.0.39",
+  "description": "A powerful library that simplifies the creation of progress bars and various chart bars in React applications.",
   "type": "commonjs",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib "
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,16 @@
   },
   "keywords": [
     "progress-bar",
-    "chart bar"
+    "chart bar",
+    "React Progress Bar",
+    "react progress",
+    "react chart",
+    "Progress Bar",
+    "react-progress-bar",
+    "react-ui-progress",
+    "responsive-progress",
+    "React BarReact",
+    " Chart Bar"
   ],
   "author": "Faiq Faroq",
   "license": "MIT",
