@@ -1,36 +1,37 @@
 import React, { useEffect, useState } from "react";
 
 const ProgressBar = ({
-  InitilValue,
-  TotalValue,
-  Cap,
+  initialValue,
+  totalValue,
   initialText,
   totalText,
-  InitiSymbol,
-  FinalSymbol,
+  initialSymbol,
+  finalSymbol,
   hideInitial,
   hideTotal,
-  ContainerStyle,
-  BarStyle,
-  BarBgStyle,
+  containerStyle,
+  barStyle,
+  barBgStyle,
   textStyle,
   valueStyle,
   leftCap,
   rightCap,
+  leftCapText,
+  rightCapText,
 }) => {
   const [values, setValues] = useState({ Total: 100, Raised: 10 });
   const SoftCap = ((leftCap ? leftCap : 20) * values?.Total) / 100;
   const hardCap = ((rightCap ? rightCap : 80) * values?.Total) / 100;
-  console.log("SoftCap", SoftCap, leftCap);
+
   useEffect(() => {
     if (values?.Total >= values?.Raised) {
       setValues({
         ...values,
-        Raised: Number(InitilValue || 10),
-        Total: Number(TotalValue || 100),
+        Raised: Number(initialValue || 10),
+        Total: Number(totalValue || 100),
       });
     }
-  }, [InitilValue, TotalValue]);
+  }, [initialValue, totalValue]);
 
   const progressBarWidth = `${(values?.Raised / values?.Total) * 100}%`;
 
@@ -44,7 +45,7 @@ const ProgressBar = ({
             padding: "16px",
             backgroundColor: "#F2F5F9",
             borderRadius: "8px",
-            ...ContainerStyle,
+            ...containerStyle,
           }}
         >
           <div
@@ -64,7 +65,7 @@ const ProgressBar = ({
                       ...valueStyle,
                     }}
                   >
-                    {values?.Raised} {InitiSymbol && InitiSymbol}
+                    {values?.Raised} {initialSymbol && initialSymbol}
                   </h3>
                 )}
               </div>
@@ -89,7 +90,7 @@ const ProgressBar = ({
                       ...valueStyle,
                     }}
                   >
-                    {values?.Total} {FinalSymbol && FinalSymbol}
+                    {values?.Total} {finalSymbol && finalSymbol}
                   </h3>
                 )}
               </div>
@@ -98,22 +99,26 @@ const ProgressBar = ({
           <div
             style={{
               position: "relative",
-              minHeight: Cap === true ? "80px" : "auto",
+              minHeight:
+                (rightCapText?.length || leftCapText?.length) > 0 === true
+                  ? "80px"
+                  : "auto",
             }}
           >
             <div
               style={{
                 width: "100%",
-                background: Cap
-                  ? `linear-gradient(to right, #fff 0%, #fff ${
-                      rightCap ? rightCap : 80
-                    }%, rgba(69, 76, 84, 0.30) ${
-                      rightCap ? rightCap : 80
-                    }%, rgba(69, 76, 84, 0.30) 100%)`
-                  : "#fff",
+                background:
+                  rightCapText?.length > 0
+                    ? `linear-gradient(to right, #fff 0%, #fff ${
+                        rightCap ? rightCap : 80
+                      }%, rgba(69, 76, 84, 0.30) ${
+                        rightCap ? rightCap : 80
+                      }%, rgba(69, 76, 84, 0.30) 100%)`
+                    : "#fff",
                 borderRadius: "32px",
                 zIndex: 100,
-                ...BarBgStyle,
+                ...barBgStyle,
               }}
             >
               <div
@@ -126,12 +131,12 @@ const ProgressBar = ({
                   width: progressBarWidth,
                   color: "white",
                   borderRadius: "32px",
-                  ...BarStyle,
+                  ...barStyle,
                 }}
               ></div>
             </div>
 
-            {Cap === true && (
+            {leftCapText && (
               <div
                 style={{
                   position: "absolute",
@@ -158,13 +163,13 @@ const ProgressBar = ({
                       whiteSpace: "nowrap",
                     }}
                   >
-                    Soft Cap
+                    {leftCapText}
                     <span style={{ display: "block" }}>{SoftCap}</span>
                   </p>
                 </div>
               </div>
             )}
-            {Cap === true && (
+            {rightCapText && (
               <div
                 style={{
                   position: "absolute",
@@ -191,7 +196,7 @@ const ProgressBar = ({
                       whiteSpace: "nowrap",
                     }}
                   >
-                    Hard Cap
+                    {rightCapText}
                     <span style={{ display: "block" }}>{hardCap}</span>
                   </p>
                 </div>
