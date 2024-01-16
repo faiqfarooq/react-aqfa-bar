@@ -100,7 +100,7 @@ const ProgressBar = ({
             style={{
               position: "relative",
               minHeight:
-                rightCapText?.length > 0 || leftCapText?.length > 0 === true
+                (rightCapText?.length || leftCapText?.length) > 0 === true
                   ? "80px"
                   : "auto",
             }}
@@ -109,7 +109,7 @@ const ProgressBar = ({
               style={{
                 width: "100%",
                 background:
-                  rightCapText.length > 0
+                  rightCapText?.length > 0
                     ? `linear-gradient(to right, #fff 0%, #fff ${
                         rightCap ? rightCap : 80
                       }%, rgba(69, 76, 84, 0.30) ${
