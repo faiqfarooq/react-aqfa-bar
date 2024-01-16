@@ -31,7 +31,7 @@ Beta Version
 
 ### Demo
 
-<a href="https://codesandbox.io/embed/8zfk8j?view=Editor+%2B+Preview&module=%2Fsrc%2FApp.js">Demo Link</a>
+<a href="https://codesandbox.io/embed/8zfk8j?view=Editor+%2B+Preview&module=%2Fsrc%2FApp.js" target="_blank">Demo Link</a>
 
 ## Getting Started
 
@@ -57,8 +57,8 @@ Then, import and use it:
 import { ProgressBar } from "react-aqfa-bar";
 
  <ProgressBar
-          InitilValue={50}
-          TotalValue={100}
+          initialValue={50}
+          totalValue={100}
           ContainerStyle={{ width: "500px" }}
         />
 ```
@@ -73,9 +73,9 @@ You can customize it according to your needs.
 import { ProgressBar } from "react-aqfa-bar";
 
 <ProgressBar
-        InitilValue={66}
-        TotalValue={100}
-        ContainerStyle={{ width: "500px" }}
+        initialValue={66}
+        totalValue={100}
+        containerStyle={{ width: "500px" }}
         initialText="Initial"
         totalText="Total"
       />
@@ -89,17 +89,17 @@ we are working on it.
 
 | Props          |                              Description                              | Default |  Type  |
 | :------------- | :-------------------------------------------------------------------: | :-----: | :----: |
-| InitilValue    |                Add initial value for the progress bar.                |   10    | number |
-| TotalValue     |                 Add final value for the progress bar.                 |   100   | number |
+| initialValue   |                Add initial value for the progress bar.                |   10    | number |
+| totalValue     |                 Add final value for the progress bar.                 |   100   | number |
 | initialText    |                       Lable the initial value.                        |   --    | string |
 | hideInitial    |            hide the initial value under the initial text.             |  true   | boolen |
 | hideTotal      |             hide the Final value under the initial text.              |  true   | boolen |
 | totalText      |                        Lable the final value.                         |   --    | string |
-| InitiSymbol    |          Add any symbol after initial value (e.g. rs,$ etc.)          |   --    | string |
-| FinalSymbol    |           Add any symbol after final value (e.g. rs,$ etc.)           |   --    | string |
-| ContainerStyle |            Apply styling to the container of progress bar.            |   --    | object |
-| BarStyle       |               Apply styling to the Bar of progress bar.               |   --    | object |
-| BarBgStyle     |         Apply styling to the bar background of progress bar.          |   --    | object |
+| initialSymbol  |          Add any symbol after initial value (e.g. rs,$ etc.)          |   --    | string |
+| finalSymbol    |           Add any symbol after final value (e.g. rs,$ etc.)           |   --    | string |
+| containerStyle |            Apply styling to the container of progress bar.            |   --    | object |
+| barStyle       |               Apply styling to the Bar of progress bar.               |   --    | object |
+| barBgStyle     |         Apply styling to the bar background of progress bar.          |   --    | object |
 | textStyle      | Apply styling to the initial and final text element of progress bar.  |   --    | object |
 | valueStyle     | Apply styling to the initial and final value element of progress bar. |   --    | object |
 
@@ -126,17 +126,18 @@ You can customize it according to your needs.
 ```sh
 import { ProgressBar } from "react-aqfa-bar";
 
-           <ProgressBar Cap={true} />
+     <ProgressBar leftCapText="Soft Cap" rightCapText="Hard Cap" />
 
 ```
 
 ## Props
 
-| Props    |                Description                 | Default |  Type   |
-| :------- | :----------------------------------------: | :-----: | :-----: |
-| Cap      | It shows the threshold with two indicator. |  false  | boolean |
-| leftCap  |     leftCap shows the first threshold.     |   20    | number  |
-| rightCap |    rightCap shows the final threshold.     |   80    | number  |
+| Props        |                    Description                    | Default |  Type  |
+| :----------- | :-----------------------------------------------: | :-----: | :----: |
+| leftCapText  | rightCapText shows the first threshold with text. |   --    | string |
+| rightCapText | rightCapText shows the final threshold with text. |   --    | string |
+| leftCap      |        leftCap shows the first threshold.         |   20    | number |
+| rightCap     |        rightCap shows the final threshold.        |   80    | number |
 
 - All done :smile:
 

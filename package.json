@@ -1,6 +1,6 @@
 {
   "name": "react-aqfa-bar",
-  "version": "1.0.39",
+  "version": "1.0.42",
   "description": "A powerful library that simplifies the creation of progress bars and various chart bars in React applications.",
   "type": "commonjs",
   "main": "lib/index.js",
