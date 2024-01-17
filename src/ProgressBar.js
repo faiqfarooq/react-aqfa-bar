@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const ProgressBar = ({
-  initialValue,
+  value,
   totalValue,
   initialText,
   totalText,
@@ -27,11 +27,11 @@ const ProgressBar = ({
     if (values?.Total >= values?.Raised) {
       setValues({
         ...values,
-        Raised: Number(initialValue || 10),
+        Raised: Number(value || 10),
         Total: Number(totalValue || 100),
       });
     }
-  }, [initialValue, totalValue]);
+  }, [value, totalValue]);
 
   const progressBarWidth = `${(values?.Raised / values?.Total) * 100}%`;
 

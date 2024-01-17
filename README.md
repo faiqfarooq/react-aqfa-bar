@@ -57,7 +57,7 @@ Then, import and use it:
 import { ProgressBar } from "react-aqfa-bar";
 
  <ProgressBar
-          initialValue={50}
+          value={50}
           totalValue={100}
           ContainerStyle={{ width: "500px" }}
         />
@@ -73,7 +73,7 @@ You can customize it according to your needs.
 import { ProgressBar } from "react-aqfa-bar";
 
 <ProgressBar
-        initialValue={66}
+        value={66}
         totalValue={100}
         containerStyle={{ width: "500px" }}
         initialText="Initial"
@@ -87,21 +87,21 @@ we are working on it.
 
 ## Props
 
-| Props          |                              Description                              | Default |  Type  |
-| :------------- | :-------------------------------------------------------------------: | :-----: | :----: |
-| initialValue   |                Add initial value for the progress bar.                |   10    | number |
-| totalValue     |                 Add final value for the progress bar.                 |   100   | number |
-| initialText    |                       Lable the initial value.                        |   --    | string |
-| hideInitial    |            hide the initial value under the initial text.             |  true   | boolen |
-| hideTotal      |             hide the Final value under the initial text.              |  true   | boolen |
-| totalText      |                        Lable the final value.                         |   --    | string |
-| initialSymbol  |          Add any symbol after initial value (e.g. rs,$ etc.)          |   --    | string |
-| finalSymbol    |           Add any symbol after final value (e.g. rs,$ etc.)           |   --    | string |
-| containerStyle |            Apply styling to the container of progress bar.            |   --    | object |
-| barStyle       |               Apply styling to the Bar of progress bar.               |   --    | object |
-| barBgStyle     |         Apply styling to the bar background of progress bar.          |   --    | object |
-| textStyle      | Apply styling to the initial and final text element of progress bar.  |   --    | object |
-| valueStyle     | Apply styling to the initial and final value element of progress bar. |   --    | object |
+| Props          |                                Description                                 | Default |  Type  |
+| :------------- | :------------------------------------------------------------------------: | :-----: | :----: |
+| value          |                   The initial value of the progress bar.                   |   10    | number |
+| totalValue     |                    The total value of the progress bar.                    |   100   | number |
+| initialText    |                 The text to display for the initial value.                 |   --    | string |
+| totalText      |                  The text to display for the total value.                  |   --    | string |
+| hideInitial    |                     Whether to hide the initial value.                     |  true   | boolen |
+| hideTotal      |                      Whether to hide the total value.                      |  true   | boolen |
+| initialSymbol  |        The symbol to append to the initial value (e.g. rs,$ etc.).         |   --    | string |
+| finalSymbol    |         The symbol to append to the total value. (e.g. rs,$ etc.).         |   --    | string |
+| containerStyle |                    Additional styles for the container.                    |   --    | object |
+| barStyle       |                  Additional styles for the progress bar.                   |   --    | object |
+| barBgStyle     |             Additional styles for the progress bar background.             |   --    | object |
+| textStyle      | Additional styles for the initial and final text element of progress bar.  |   --    | object |
+| valueStyle     | Additional styles for the initial and final value element of progress bar. |   --    | object |
 
 ## Progress bar threshold
 
