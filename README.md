@@ -31,7 +31,9 @@ Beta Version
 
 ### Demo
 
-<a href="https://codesandbox.io/embed/8zfk8j?view=Editor+%2B+Preview&module=%2Fsrc%2FApp.js" target="_blank">Demo Link</a>
+<a href="https://codesandbox.io/embed/8zfk8j?view=Editor+%2B+Preview&module=%2Fsrc%2FApp.js"  target="_blank">Demo Link</a>
+
+[![Edit charming-bogdan-8zfk8j](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/charming-bogdan-8zfk8j)
 
 ## Getting Started
 
