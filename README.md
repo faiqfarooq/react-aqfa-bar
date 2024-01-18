@@ -134,12 +134,12 @@ import { ProgressBar } from "react-aqfa-bar";
 
 ## Props
 
-| Props        |                    Description                    | Default |  Type  |
-| :----------- | :-----------------------------------------------: | :-----: | :----: |
-| leftCapText  | rightCapText shows the first threshold with text. |   --    | string |
-| rightCapText | rightCapText shows the final threshold with text. |   --    | string |
-| leftCap      |        leftCap shows the first threshold.         |   20    | number |
-| rightCap     |        rightCap shows the final threshold.        |   80    | number |
+| Props        |                       Description                        | Default |  Type  |
+| :----------- | :------------------------------------------------------: | :-----: | :----: |
+| leftCapText  |    rightCapText shows the first threshold with text.     |   --    | string |
+| rightCapText |    rightCapText shows the final threshold with text.     |   --    | string |
+| leftCap      | leftCap shows the first threshold (range from 0 - 100).  |   20    | number |
+| rightCap     | rightCap shows the final threshold (range from 0 - 100). |   80    | number |
 
 - All done :smile:
 
