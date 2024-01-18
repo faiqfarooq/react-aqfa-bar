@@ -1,12 +1,13 @@
 {
   "name": "react-aqfa-bar",
-  "version": "1.0.42",
+  "version": "1.0.44",
   "description": "A powerful library that simplifies the creation of progress bars and various chart bars in React applications.",
   "type": "commonjs",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir lib "
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
   "homepage": "https://github.com/faiqfarooq/react-aqfa-bar#readme",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -40,6 +42,10 @@
     "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.8",
-    "@babel/preset-react": "^7.23.3"
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^5.3.3"
   }
 }
