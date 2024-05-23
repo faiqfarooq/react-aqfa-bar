@@ -12,7 +12,7 @@ Beta Version
 <br />
 <p align="center">
   <a href="https://www.npmjs.com/package/react-aqfa-bar">
-    <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195336117373894676/image.png?ex=65b39e82&is=65a12982&hm=870f645a22d7f3ebc12763d8cac3bae472091ccb66264250ee57ff57ca859a47&" alt="Logo" width="100%" height="auto">
+    <img src="https://i.ibb.co/FBCWXDt/image.png" alt="Logo" width="100%" height="auto">
   </a>
 
   <h3 align="center">React Aqfa Progress Chart Bar</h3>
@@ -49,7 +49,7 @@ or
 yarn add react-aqfa-bar
 ```
 
-  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195331811421724753/image.png?ex=65b39a80&is=65a12580&hm=e7db28ede3344eaa6ee727c388dbbdd32233a4edcde17197d36dce984d83af0a&" alt="progress bar with two color" width="100%" height="auto">
+  <img src="https://i.ibb.co/gv09z10/image2.png" alt="progress bar with two color" width="100%" height="auto">
 
 Then, import and use it:
 
@@ -69,7 +69,7 @@ import { ProgressBar } from "react-aqfa-bar";
 
 You can customize it according to your needs.
 
-  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1195334012101734470/image.png?ex=65b39c8c&is=65a1278c&hm=f2b34baa6a7f01eb532e6b3d9f16fc6a11b4e909546f89a6a2b1f2bf078b8057&" alt="progress bar with two color" width="100%" height="auto">
+  <img src="https://i.ibb.co/WFfKCm6/55.png" alt="progress bar with two color" width="100%" height="auto">
 
 ```sh
 import { ProgressBar } from "react-aqfa-bar";
@@ -123,7 +123,7 @@ background:`linear-gradient(to right, #fff 0%, #fff 80%, rgba(69, 76, 84, 0.30) 
 
 You can customize it according to your needs.
 
-  <img src="https://cdn.discordapp.com/attachments/1125717730872524803/1196436283917094942/image.png?ex=65b79f1e&is=65a52a1e&hm=cc711604205e898aaa9838c59326def87489d43bf49bb6e2de5b296f26c028fc&" alt="progress bar with two color" width="100%" height="auto">
+  <img src="https://i.ibb.co/hg5GT5x/Group-16352.png" alt="progress bar with two color" width="100%" height="auto">
 
 ```sh
 import { ProgressBar } from "react-aqfa-bar";
