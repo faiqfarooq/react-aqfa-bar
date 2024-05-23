@@ -49,7 +49,7 @@ or
 yarn add react-aqfa-bar
 ```
 
-  <img src="https://i.ibb.co/gv09z10/image2.png" alt="progress bar with two color" width="100%" height="auto">
+  <img src="https://i.ibb.co/CKrBMgT/image4.png" alt="progress bar with two color" width="100%" height="auto">
 
 Then, import and use it:
 
@@ -123,7 +123,7 @@ background:`linear-gradient(to right, #fff 0%, #fff 80%, rgba(69, 76, 84, 0.30) 
 
 You can customize it according to your needs.
 
-  <img src="https://i.ibb.co/hg5GT5x/Group-16352.png" alt="progress bar with two color" width="100%" height="auto">
+  <img src="https://i.ibb.co/gv09z10/image2.png" alt="progress bar with two color" width="100%" height="auto">
 
 ```sh
 import { ProgressBar } from "react-aqfa-bar";
